@@ -35,6 +35,8 @@ class ChineseRecursiveTextSplitter(RecursiveCharacterTextSplitter):
     ) -> None:
         """Create a new TextSplitter."""
         super().__init__(keep_separator=keep_separator, **kwargs)
+        self._separators = ["#####"]
+        '''
         self._separators = separators or [
             "\n\n",
             "\n",
@@ -43,6 +45,7 @@ class ChineseRecursiveTextSplitter(RecursiveCharacterTextSplitter):
             "；|;\s",
             "，|,\s"
         ]
+        '''
         self._is_separator_regex = is_separator_regex
 
     def _split_text(self, text: str, separators: List[str]) -> List[str]:
@@ -68,6 +71,8 @@ class ChineseRecursiveTextSplitter(RecursiveCharacterTextSplitter):
         _good_splits = []
         _separator = "" if self._keep_separator else separator
         for s in splits:
+            final_chunks.append(s.replace('#####',''))
+            '''
             if self._length_function(s) < self._chunk_size:
                 _good_splits.append(s)
             else:
@@ -84,7 +89,8 @@ class ChineseRecursiveTextSplitter(RecursiveCharacterTextSplitter):
             merged_text = self._merge_splits(_good_splits, _separator)
             final_chunks.extend(merged_text)
         return [re.sub(r"\n{2,}", "\n", chunk.strip()) for chunk in final_chunks if chunk.strip()!=""]
-
+        '''
+        return final_chunks
 
 if __name__ == "__main__":
     text_splitter = ChineseRecursiveTextSplitter(

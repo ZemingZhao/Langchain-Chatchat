@@ -85,7 +85,7 @@ def list_files_from_folder(kb_name: str):
     return result
 
 
-LOADER_DICT = {"UnstructuredHTMLLoader": ['.html', '.htm'],
+LOADER_DICT = {"UnstructuredHTMLLoader": ['.html'],
                "MHTMLLoader": ['.mhtml'],
                "UnstructuredMarkdownLoader": ['.md'],
                "JSONLoader": [".json"],
