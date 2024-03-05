@@ -1,0 +1,481 @@
+2024-01-30 18:39:40,973 - startup.py[line:655] - INFO: 正在启动服务：
+2024-01-30 18:39:40,974 - startup.py[line:656] - INFO: 如需查看 llm_api 日志，请前往 /root/Langchain-Chatchat/logs
+
+
+==============================Langchain-Chatchat Configuration==============================
+操作系统：Linux-5.14.0-410.el9.x86_64-x86_64-with-glibc2.34.
+python版本：3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+项目版本：v0.2.10
+langchain版本：0.0.354. fastchat版本：0.2.35
+
+
+当前使用的分词器：ChineseRecursiveTextSplitter
+当前启动的LLM模型：['chatglm3-6b', 'zhipu-api', 'openai-api'] @ cuda
+{'device': 'cuda',
+ 'host': '0.0.0.0',
+ 'infer_turbo': False,
+ 'model_path': 'THUDM/chatglm3-6b',
+ 'port': 20002}
+{'api_key': '',
+ 'device': 'auto',
+ 'host': '0.0.0.0',
+ 'infer_turbo': False,
+ 'online_api': True,
+ 'port': 21001,
+ 'provider': 'ChatGLMWorker',
+ 'version': 'glm-4',
+ 'worker_class': <class 'server.model_workers.zhipu.ChatGLMWorker'>}
+{'api_base_url': 'https://api.openai.com/v1',
+ 'api_key': '',
+ 'device': 'auto',
+ 'host': '0.0.0.0',
+ 'infer_turbo': False,
+ 'model_name': 'gpt-4',
+ 'online_api': True,
+ 'openai_proxy': '',
+ 'port': 20002}
+当前Embbedings模型： bge-large-zh-v1.5 @ cuda
+==============================Langchain-Chatchat Configuration==============================
+
+
+/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: 模型启动功能将于 Langchain-Chatchat 0.3.x重写,支持更多模式和加速启动，0.2.x中相关功能将废弃
+  warn_deprecated(
+2024-01-30 18:39:47 | ERROR | stderr | INFO:     Started server process [8327]
+2024-01-30 18:39:47 | ERROR | stderr | INFO:     Waiting for application startup.
+2024-01-30 18:39:47 | ERROR | stderr | INFO:     Application startup complete.
+2024-01-30 18:39:47 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)
+2024-01-30 18:39:47 | INFO | model_worker | Register to controller
+2024-01-30 18:39:48 | INFO | model_worker | Loading the model ['chatglm3-6b'] on worker 4b7b1912 ...
+2024-01-30 18:39:53 | ERROR | stderr | Downloading shards:   0%|          | 0/7 [00:00<?, ?it/s]
+2024-01-30 18:39:55 | ERROR | stderr | 
+2024-01-30 18:39:55 | ERROR | stderr | model-00001-of-00007.safetensors:   0%|          | 0.00/1.83G [00:00<?, ?B/s]
+2024-01-30 18:39:55 | ERROR | stderr | [A
+2024-01-30 18:41:38 | ERROR | stderr | 
+2024-01-30 18:41:38 | ERROR | stderr | model-00001-of-00007.safetensors:   1%|          | 10.5M/1.83G [01:42<4:54:48, 103kB/s]
+2024-01-30 18:41:38 | ERROR | stderr | [A
+2024-01-30 18:41:45 | ERROR | stderr | 
+2024-01-30 18:41:45 | ERROR | stderr | model-00001-of-00007.safetensors:   1%|          | 21.0M/1.83G [01:49<2:13:27, 226kB/s]
+2024-01-30 18:41:45 | ERROR | stderr | [A
+2024-01-30 18:41:53 | ERROR | stderr | 
+2024-01-30 18:41:53 | ERROR | stderr | model-00001-of-00007.safetensors:   2%|▏         | 31.5M/1.83G [01:57<1:22:47, 362kB/s]
+2024-01-30 18:41:53 | ERROR | stderr | [A
+2024-01-30 18:42:01 | ERROR | stderr | 
+2024-01-30 18:42:01 | ERROR | stderr | model-00001-of-00007.safetensors:   2%|▏         | 41.9M/1.83G [02:05<58:04, 513kB/s]
+2024-01-30 18:42:01 | ERROR | stderr | [A
+2024-01-30 18:42:13 | ERROR | stderr | 
+2024-01-30 18:42:13 | ERROR | stderr | model-00001-of-00007.safetensors:   2%|▏         | 41.9M/1.83G [02:17<58:04, 513kB/s]
+2024-01-30 18:42:13 | ERROR | stderr | [A
+2024-01-30 18:42:18 | ERROR | stderr | 
+2024-01-30 18:42:18 | ERROR | stderr | model-00001-of-00007.safetensors:   3%|▎         | 52.4M/1.83G [02:22<54:50, 540kB/s]
+2024-01-30 18:42:18 | ERROR | stderr | [A
+2024-01-30 18:42:33 | ERROR | stderr | 
+2024-01-30 18:42:33 | ERROR | stderr | model-00001-of-00007.safetensors:   3%|▎         | 52.4M/1.83G [02:37<54:50, 540kB/s]
+2024-01-30 18:42:33 | ERROR | stderr | [A
+2024-01-30 18:42:40 | ERROR | stderr | 
+2024-01-30 18:42:40 | ERROR | stderr | model-00001-of-00007.safetensors:   3%|▎         | 62.9M/1.83G [02:44<57:00, 516kB/s]
+2024-01-30 18:42:40 | ERROR | stderr | [A
+2024-01-30 18:42:53 | ERROR | stderr | 
+2024-01-30 18:42:53 | ERROR | stderr | model-00001-of-00007.safetensors:   3%|▎         | 62.9M/1.83G [02:57<57:00, 516kB/s]
+2024-01-30 18:42:53 | ERROR | stderr | [A
+2024-01-30 18:42:55 | ERROR | stderr | 
+2024-01-30 18:42:55 | ERROR | stderr | model-00001-of-00007.safetensors:   4%|▍         | 73.4M/1.83G [02:59<51:25, 569kB/s]
+2024-01-30 18:42:55 | ERROR | stderr | [A
+2024-01-30 18:43:13 | ERROR | stderr | 
+2024-01-30 18:43:13 | ERROR | stderr | model-00001-of-00007.safetensors:   4%|▍         | 73.4M/1.83G [03:17<51:25, 569kB/s]
+2024-01-30 18:43:13 | ERROR | stderr | [A
+2024-01-30 18:43:13 | ERROR | stderr | 
+2024-01-30 18:43:13 | ERROR | stderr | model-00001-of-00007.safetensors:   5%|▍         | 83.9M/1.83G [03:17<50:44, 573kB/s]
+2024-01-30 18:43:13 | ERROR | stderr | [A
+2024-01-30 18:43:33 | ERROR | stderr | 
+2024-01-30 18:43:33 | ERROR | stderr | model-00001-of-00007.safetensors:   5%|▍         | 83.9M/1.83G [03:37<50:44, 573kB/s]
+2024-01-30 18:43:33 | ERROR | stderr | [A
+2024-01-30 18:43:34 | ERROR | stderr | 
+2024-01-30 18:43:34 | ERROR | stderr | model-00001-of-00007.safetensors:   5%|▌         | 94.4M/1.83G [03:38<52:25, 551kB/s]
+2024-01-30 18:43:34 | ERROR | stderr | [A
+2024-01-30 18:43:48 | ERROR | stderr | 
+2024-01-30 18:43:48 | ERROR | stderr | model-00001-of-00007.safetensors:   6%|▌         | 105M/1.83G [03:52<48:10, 596kB/s]
+2024-01-30 18:43:48 | ERROR | stderr | [A
+2024-01-30 18:43:57 | ERROR | stderr | 
+2024-01-30 18:43:57 | ERROR | stderr | model-00001-of-00007.safetensors:   6%|▋         | 115M/1.83G [04:01<40:59, 696kB/s]
+2024-01-30 18:43:57 | ERROR | stderr | [A
+2024-01-30 18:44:13 | ERROR | stderr | 
+2024-01-30 18:44:13 | ERROR | stderr | model-00001-of-00007.safetensors:   6%|▋         | 115M/1.83G [04:17<40:59, 696kB/s]
+2024-01-30 18:44:13 | ERROR | stderr | [A
+2024-01-30 18:44:17 | ERROR | stderr | 
+2024-01-30 18:44:17 | ERROR | stderr | model-00001-of-00007.safetensors:   7%|▋         | 126M/1.83G [04:21<44:37, 636kB/s]
+2024-01-30 18:44:17 | ERROR | stderr | [A
+2024-01-30 18:44:33 | ERROR | stderr | 
+2024-01-30 18:44:33 | ERROR | stderr | model-00001-of-00007.safetensors:   7%|▋         | 126M/1.83G [04:37<44:37, 636kB/s]
+2024-01-30 18:44:33 | ERROR | stderr | [A
+2024-01-30 18:44:49 | ERROR | stderr | 
+2024-01-30 18:44:49 | ERROR | stderr | model-00001-of-00007.safetensors:   7%|▋         | 136M/1.83G [04:53<57:06, 494kB/s]
+2024-01-30 18:44:49 | ERROR | stderr | [A
+2024-01-30 18:45:03 | ERROR | stderr | 
+2024-01-30 18:45:03 | ERROR | stderr | model-00001-of-00007.safetensors:   7%|▋         | 136M/1.83G [05:07<57:06, 494kB/s]
+2024-01-30 18:45:03 | ERROR | stderr | [A
+2024-01-30 18:45:13 | ERROR | stderr | 
+2024-01-30 18:45:13 | ERROR | stderr | model-00001-of-00007.safetensors:   8%|▊         | 147M/1.83G [05:17<59:07, 474kB/s]
+2024-01-30 18:45:13 | ERROR | stderr | [A
+2024-01-30 18:45:33 | ERROR | stderr | 
+2024-01-30 18:45:33 | ERROR | stderr | model-00001-of-00007.safetensors:   8%|▊         | 147M/1.83G [05:37<59:07, 474kB/s]
+2024-01-30 18:45:33 | ERROR | stderr | [A
+2024-01-30 18:45:35 | ERROR | stderr | 
+2024-01-30 18:45:35 | ERROR | stderr | model-00001-of-00007.safetensors:   9%|▊         | 157M/1.83G [05:39<58:21, 477kB/s]
+2024-01-30 18:45:35 | ERROR | stderr | [A
+2024-01-30 18:45:51 | ERROR | stderr | 
+2024-01-30 18:45:51 | ERROR | stderr | model-00001-of-00007.safetensors:   9%|▉         | 168M/1.83G [05:55<52:53, 523kB/s]
+2024-01-30 18:45:51 | ERROR | stderr | [A
+2024-01-30 18:46:03 | ERROR | stderr | 
+2024-01-30 18:46:03 | ERROR | stderr | model-00001-of-00007.safetensors:   9%|▉         | 168M/1.83G [06:07<52:53, 523kB/s]
+2024-01-30 18:46:03 | ERROR | stderr | [A
+2024-01-30 18:46:11 | ERROR | stderr | 
+2024-01-30 18:46:11 | ERROR | stderr | model-00001-of-00007.safetensors:  10%|▉         | 178M/1.83G [06:15<52:43, 521kB/s]
+2024-01-30 18:46:11 | ERROR | stderr | [A
+2024-01-30 18:46:23 | ERROR | stderr | 
+2024-01-30 18:46:23 | ERROR | stderr | model-00001-of-00007.safetensors:  10%|▉         | 178M/1.83G [06:27<52:43, 521kB/s]
+2024-01-30 18:46:23 | ERROR | stderr | [A
+2024-01-30 18:46:43 | ERROR | stderr | 
+2024-01-30 18:46:43 | ERROR | stderr | model-00001-of-00007.safetensors:  10%|█         | 189M/1.83G [06:47<1:01:40, 443kB/s]
+2024-01-30 18:46:43 | ERROR | stderr | [A
+2024-01-30 18:46:53 | ERROR | stderr | 
+2024-01-30 18:46:53 | ERROR | stderr | model-00001-of-00007.safetensors:  10%|█         | 189M/1.83G [06:57<1:01:40, 443kB/s]
+2024-01-30 18:46:53 | ERROR | stderr | [A
+2024-01-30 18:48:17 | ERROR | stderr | 
+2024-01-30 18:48:17 | ERROR | stderr | model-00001-of-00007.safetensors:  11%|█         | 199M/1.83G [08:21<1:56:23, 233kB/s]
+2024-01-30 18:48:17 | ERROR | stderr | [A
+2024-01-30 18:48:26 | ERROR | stderr | 
+2024-01-30 18:48:26 | ERROR | stderr | model-00001-of-00007.safetensors:  11%|█▏        | 210M/1.83G [08:30<1:27:49, 307kB/s]
+2024-01-30 18:48:26 | ERROR | stderr | [A
+2024-01-30 18:48:43 | ERROR | stderr | 
+2024-01-30 18:48:43 | ERROR | stderr | model-00001-of-00007.safetensors:  11%|█▏        | 210M/1.83G [08:47<1:27:49, 307kB/s]
+2024-01-30 18:48:43 | ERROR | stderr | [A
+2024-01-30 18:48:54 | ERROR | stderr | 
+2024-01-30 18:48:54 | ERROR | stderr | model-00001-of-00007.safetensors:  12%|█▏        | 220M/1.83G [08:58<1:22:34, 324kB/s]
+2024-01-30 18:48:54 | ERROR | stderr | [A
+2024-01-30 18:49:04 | ERROR | stderr | 
+2024-01-30 18:49:04 | ERROR | stderr | model-00001-of-00007.safetensors:  13%|█▎        | 231M/1.83G [09:08<1:04:54, 410kB/s]
+2024-01-30 18:49:04 | ERROR | stderr | [A
+2024-01-30 18:49:18 | ERROR | stderr | 
+2024-01-30 18:49:18 | ERROR | stderr | model-00001-of-00007.safetensors:  13%|█▎        | 241M/1.83G [09:22<55:58, 472kB/s]
+2024-01-30 18:49:18 | ERROR | stderr | [A
+2024-01-30 18:49:33 | ERROR | stderr | 
+2024-01-30 18:49:33 | ERROR | stderr | model-00001-of-00007.safetensors:  13%|█▎        | 241M/1.83G [09:37<55:58, 472kB/s]
+2024-01-30 18:49:33 | ERROR | stderr | [A
+2024-01-30 18:49:33 | ERROR | stderr | 
+2024-01-30 18:49:33 | ERROR | stderr | model-00001-of-00007.safetensors:  14%|█▍        | 252M/1.83G [09:37<49:58, 526kB/s]
+2024-01-30 18:49:33 | ERROR | stderr | [A
+2024-01-30 18:49:53 | ERROR | stderr | 
+2024-01-30 18:49:53 | ERROR | stderr | model-00001-of-00007.safetensors:  14%|█▍        | 252M/1.83G [09:57<49:58, 526kB/s]
+2024-01-30 18:49:53 | ERROR | stderr | [A
+2024-01-30 18:49:53 | ERROR | stderr | 
+2024-01-30 18:49:53 | ERROR | stderr | model-00001-of-00007.safetensors:  14%|█▍        | 262M/1.83G [09:57<49:27, 528kB/s]
+2024-01-30 18:49:53 | ERROR | stderr | [A
+2024-01-30 18:50:09 | ERROR | stderr | 
+2024-01-30 18:50:09 | ERROR | stderr | model-00001-of-00007.safetensors:  15%|█▍        | 273M/1.83G [10:13<46:05, 562kB/s]
+2024-01-30 18:50:09 | ERROR | stderr | [A
+2024-01-30 18:50:23 | ERROR | stderr | 
+2024-01-30 18:50:23 | ERROR | stderr | model-00001-of-00007.safetensors:  15%|█▍        | 273M/1.83G [10:27<46:05, 562kB/s]
+2024-01-30 18:50:23 | ERROR | stderr | [A
+2024-01-30 18:50:26 | ERROR | stderr | 
+2024-01-30 18:50:26 | ERROR | stderr | model-00001-of-00007.safetensors:  15%|█▌        | 283M/1.83G [10:30<44:55, 573kB/s]
+2024-01-30 18:50:26 | ERROR | stderr | [A
+2024-01-30 18:50:37 | ERROR | stderr | 
+2024-01-30 18:50:37 | ERROR | stderr | model-00001-of-00007.safetensors:  16%|█▌        | 294M/1.83G [10:41<39:06, 654kB/s]
+2024-01-30 18:50:37 | ERROR | stderr | [A
+2024-01-30 18:50:53 | ERROR | stderr | 
+2024-01-30 18:50:53 | ERROR | stderr | model-00001-of-00007.safetensors:  16%|█▌        | 294M/1.83G [10:57<39:06, 654kB/s]
+2024-01-30 18:50:53 | ERROR | stderr | [A
+2024-01-30 18:51:10 | ERROR | stderr | 
+2024-01-30 18:51:10 | ERROR | stderr | model-00001-of-00007.safetensors:  17%|█▋        | 304M/1.83G [11:14<51:27, 494kB/s]
+2024-01-30 18:51:10 | ERROR | stderr | [A
+2024-01-30 18:51:23 | ERROR | stderr | 
+2024-01-30 18:51:23 | ERROR | stderr | model-00001-of-00007.safetensors:  17%|█▋        | 304M/1.83G [11:27<51:27, 494kB/s]
+2024-01-30 18:51:23 | ERROR | stderr | [A
+2024-01-30 18:51:36 | ERROR | stderr | 
+2024-01-30 18:51:36 | ERROR | stderr | model-00001-of-00007.safetensors:  17%|█▋        | 315M/1.83G [11:40<54:07, 466kB/s]
+2024-01-30 18:51:36 | ERROR | stderr | [A
+2024-01-30 18:51:53 | ERROR | stderr | 
+2024-01-30 18:51:53 | ERROR | stderr | model-00001-of-00007.safetensors:  17%|█▋        | 315M/1.83G [11:57<54:07, 466kB/s]
+2024-01-30 18:51:53 | ERROR | stderr | [A
+2024-01-30 18:51:58 | ERROR | stderr | 
+2024-01-30 18:51:58 | ERROR | stderr | model-00001-of-00007.safetensors:  18%|█▊        | 325M/1.83G [12:02<53:42, 466kB/s]
+2024-01-30 18:51:58 | ERROR | stderr | [A
+2024-01-30 18:52:13 | ERROR | stderr | 
+2024-01-30 18:52:13 | ERROR | stderr | model-00001-of-00007.safetensors:  18%|█▊        | 325M/1.83G [12:17<53:42, 466kB/s]
+2024-01-30 18:52:13 | ERROR | stderr | [A
+2024-01-30 18:52:29 | ERROR | stderr | 
+2024-01-30 18:52:29 | ERROR | stderr | model-00001-of-00007.safetensors:  18%|█▊        | 336M/1.83G [12:33<58:56, 422kB/s]
+2024-01-30 18:52:29 | ERROR | stderr | [A
+2024-01-30 18:52:43 | ERROR | stderr | 
+2024-01-30 18:52:43 | ERROR | stderr | model-00001-of-00007.safetensors:  18%|█▊        | 336M/1.83G [12:47<58:56, 422kB/s]
+2024-01-30 18:52:43 | ERROR | stderr | [A
+2024-01-30 18:53:01 | ERROR | stderr | 
+2024-01-30 18:53:01 | ERROR | stderr | model-00001-of-00007.safetensors:  19%|█▉        | 346M/1.83G [13:05<1:03:37, 388kB/s]
+2024-01-30 18:53:01 | ERROR | stderr | [A
+2024-01-30 18:53:13 | ERROR | stderr | 
+2024-01-30 18:53:13 | ERROR | stderr | model-00001-of-00007.safetensors:  19%|█▉        | 346M/1.83G [13:17<1:03:37, 388kB/s]
+2024-01-30 18:53:13 | ERROR | stderr | [A
+2024-01-30 18:53:27 | ERROR | stderr | 
+2024-01-30 18:53:27 | ERROR | stderr | model-00001-of-00007.safetensors:  20%|█▉        | 357M/1.83G [13:31<1:02:54, 390kB/s]
+2024-01-30 18:53:27 | ERROR | stderr | [A
+2024-01-30 18:53:40 | ERROR | stderr | 
+2024-01-30 18:53:40 | ERROR | stderr | model-00001-of-00007.safetensors:  20%|██        | 367M/1.83G [13:44<52:45, 461kB/s]
+2024-01-30 18:53:40 | ERROR | stderr | [A
+2024-01-30 18:53:53 | ERROR | stderr | 
+2024-01-30 18:53:53 | ERROR | stderr | model-00001-of-00007.safetensors:  20%|██        | 367M/1.83G [13:57<52:45, 461kB/s]
+2024-01-30 18:53:53 | ERROR | stderr | [A
+2024-01-30 18:54:19 | ERROR | stderr | 
+2024-01-30 18:54:19 | ERROR | stderr | model-00001-of-00007.safetensors:  21%|██        | 377M/1.83G [14:23<1:03:44, 379kB/s]
+2024-01-30 18:54:19 | ERROR | stderr | [A
+2024-01-30 18:54:33 | ERROR | stderr | 
+2024-01-30 18:54:33 | ERROR | stderr | model-00001-of-00007.safetensors:  21%|██        | 377M/1.83G [14:37<1:03:44, 379kB/s]
+2024-01-30 18:54:33 | ERROR | stderr | [A
+2024-01-30 18:55:11 | ERROR | stderr | 
+2024-01-30 18:55:11 | ERROR | stderr | model-00001-of-00007.safetensors:  21%|██        | 388M/1.83G [15:15<1:19:44, 301kB/s]
+2024-01-30 18:55:11 | ERROR | stderr | [A
+2024-01-30 18:55:23 | ERROR | stderr | 
+2024-01-30 18:55:23 | ERROR | stderr | model-00001-of-00007.safetensors:  21%|██        | 388M/1.83G [15:27<1:19:44, 301kB/s]
+2024-01-30 18:55:23 | ERROR | stderr | [A
+2024-01-30 18:55:33 | ERROR | stderr | 
+2024-01-30 18:55:33 | ERROR | stderr | model-00001-of-00007.safetensors:  22%|██▏       | 398M/1.83G [15:37<1:10:31, 338kB/s]
+2024-01-30 18:55:33 | ERROR | stderr | [A
+2024-01-30 18:55:48 | ERROR | stderr | 
+2024-01-30 18:55:48 | ERROR | stderr | model-00001-of-00007.safetensors:  22%|██▏       | 409M/1.83G [15:52<59:05, 400kB/s]
+2024-01-30 18:55:48 | ERROR | stderr | [A
+2024-01-30 18:56:03 | ERROR | stderr | 
+2024-01-30 18:56:03 | ERROR | stderr | model-00001-of-00007.safetensors:  22%|██▏       | 409M/1.83G [16:07<59:05, 400kB/s]
+2024-01-30 18:56:03 | ERROR | stderr | [A
+2024-01-30 18:56:17 | ERROR | stderr | 
+2024-01-30 18:56:17 | ERROR | stderr | model-00001-of-00007.safetensors:  23%|██▎       | 419M/1.83G [16:21<1:00:32, 388kB/s]
+2024-01-30 18:56:17 | ERROR | stderr | [A
+2024-01-30 18:56:30 | ERROR | stderr | 
+2024-01-30 18:56:30 | ERROR | stderr | model-00001-of-00007.safetensors:  24%|██▎       | 430M/1.83G [16:34<50:39, 460kB/s]
+2024-01-30 18:56:30 | ERROR | stderr | [A
+2024-01-30 18:56:43 | ERROR | stderr | 
+2024-01-30 18:56:43 | ERROR | stderr | model-00001-of-00007.safetensors:  24%|██▎       | 430M/1.83G [16:47<50:39, 460kB/s]
+2024-01-30 18:56:43 | ERROR | stderr | [A
+2024-01-30 18:56:57 | ERROR | stderr | 
+2024-01-30 18:56:57 | ERROR | stderr | model-00001-of-00007.safetensors:  24%|██▍       | 440M/1.83G [17:01<53:20, 434kB/s]
+2024-01-30 18:56:57 | ERROR | stderr | [A
+2024-01-30 18:57:13 | ERROR | stderr | 
+2024-01-30 18:57:13 | ERROR | stderr | model-00001-of-00007.safetensors:  24%|██▍       | 440M/1.83G [17:17<53:20, 434kB/s]
+2024-01-30 18:57:13 | ERROR | stderr | [A
+2024-01-30 18:57:32 | ERROR | stderr | 
+2024-01-30 18:57:32 | ERROR | stderr | model-00001-of-00007.safetensors:  25%|██▍       | 451M/1.83G [17:36<59:54, 383kB/s]
+2024-01-30 18:57:32 | ERROR | stderr | [A
+2024-01-30 18:57:43 | ERROR | stderr | 
+2024-01-30 18:57:43 | ERROR | stderr | model-00001-of-00007.safetensors:  25%|██▍       | 451M/1.83G [17:47<59:54, 383kB/s]
+2024-01-30 18:57:43 | ERROR | stderr | [A
+2024-01-30 18:58:05 | ERROR | stderr | 
+2024-01-30 18:58:05 | ERROR | stderr | model-00001-of-00007.safetensors:  25%|██▌       | 461M/1.83G [18:09<1:02:39, 363kB/s]
+2024-01-30 18:58:05 | ERROR | stderr | [A
+2024-01-30 18:58:15 | ERROR | stderr | 
+2024-01-30 18:58:15 | ERROR | stderr | model-00001-of-00007.safetensors:  26%|██▌       | 472M/1.83G [18:19<50:31, 447kB/s]
+2024-01-30 18:58:15 | ERROR | stderr | [A
+2024-01-30 18:58:32 | ERROR | stderr | 
+2024-01-30 18:58:32 | ERROR | stderr | model-00001-of-00007.safetensors:  26%|██▋       | 482M/1.83G [18:36<45:48, 490kB/s]
+2024-01-30 18:58:32 | ERROR | stderr | [A
+2024-01-30 18:58:43 | ERROR | stderr | 
+2024-01-30 18:58:43 | ERROR | stderr | model-00001-of-00007.safetensors:  26%|██▋       | 482M/1.83G [18:47<45:48, 490kB/s]
+2024-01-30 18:58:43 | ERROR | stderr | [A
+2024-01-30 18:58:55 | ERROR | stderr | 
+2024-01-30 18:58:55 | ERROR | stderr | model-00001-of-00007.safetensors:  27%|██▋       | 493M/1.83G [18:59<46:34, 478kB/s]
+2024-01-30 18:58:55 | ERROR | stderr | [A
+2024-01-30 18:59:13 | ERROR | stderr | 
+2024-01-30 18:59:13 | ERROR | stderr | model-00001-of-00007.safetensors:  27%|██▋       | 493M/1.83G [19:17<46:34, 478kB/s]
+2024-01-30 18:59:13 | ERROR | stderr | [A
+2024-01-30 18:59:20 | ERROR | stderr | 
+2024-01-30 18:59:20 | ERROR | stderr | model-00001-of-00007.safetensors:  28%|██▊       | 503M/1.83G [19:24<47:47, 462kB/s]
+2024-01-30 18:59:20 | ERROR | stderr | [A
+2024-01-30 18:59:33 | ERROR | stderr | 
+2024-01-30 18:59:33 | ERROR | stderr | model-00001-of-00007.safetensors:  28%|██▊       | 503M/1.83G [19:37<47:47, 462kB/s]
+2024-01-30 18:59:33 | ERROR | stderr | [A
+2024-01-30 18:59:35 | ERROR | stderr | 
+2024-01-30 18:59:35 | ERROR | stderr | model-00001-of-00007.safetensors:  28%|██▊       | 514M/1.83G [19:39<42:33, 515kB/s]
+2024-01-30 18:59:35 | ERROR | stderr | [A
+2024-01-30 18:59:49 | ERROR | stderr | 
+2024-01-30 18:59:49 | ERROR | stderr | model-00001-of-00007.safetensors:  29%|██▊       | 524M/1.83G [19:53<38:23, 566kB/s]
+2024-01-30 18:59:49 | ERROR | stderr | [A
+2024-01-30 19:00:03 | ERROR | stderr | 
+2024-01-30 19:00:03 | ERROR | stderr | model-00001-of-00007.safetensors:  29%|██▊       | 524M/1.83G [20:07<38:23, 566kB/s]
+2024-01-30 19:00:03 | ERROR | stderr | [A
+2024-01-30 19:00:26 | ERROR | stderr | 
+2024-01-30 19:00:26 | ERROR | stderr | model-00001-of-00007.safetensors:  29%|██▉       | 535M/1.83G [20:30<49:32, 435kB/s]
+2024-01-30 19:00:26 | ERROR | stderr | [A
+2024-01-30 19:00:43 | ERROR | stderr | 
+2024-01-30 19:00:43 | ERROR | stderr | model-00001-of-00007.safetensors:  29%|██▉       | 535M/1.83G [20:47<49:32, 435kB/s]
+2024-01-30 19:00:43 | ERROR | stderr | [A
+2024-01-30 19:01:05 | ERROR | stderr | 
+2024-01-30 19:01:05 | ERROR | stderr | model-00001-of-00007.safetensors:  30%|██▉       | 545M/1.83G [21:09<58:31, 365kB/s]
+2024-01-30 19:01:05 | ERROR | stderr | [A
+2024-01-30 19:01:23 | ERROR | stderr | 
+2024-01-30 19:01:23 | ERROR | stderr | model-00001-of-00007.safetensors:  30%|██▉       | 545M/1.83G [21:27<58:31, 365kB/s]
+2024-01-30 19:01:23 | ERROR | stderr | [A
+2024-01-30 19:01:34 | ERROR | stderr | 
+2024-01-30 19:01:34 | ERROR | stderr | model-00001-of-00007.safetensors:  30%|███       | 556M/1.83G [21:38<57:59, 366kB/s]
+2024-01-30 19:01:34 | ERROR | stderr | [A
+2024-01-30 19:01:53 | ERROR | stderr | 
+2024-01-30 19:01:53 | ERROR | stderr | model-00001-of-00007.safetensors:  30%|███       | 556M/1.83G [21:57<57:59, 366kB/s]
+2024-01-30 19:01:53 | ERROR | stderr | [A
+2024-01-30 19:01:55 | ERROR | stderr | 
+2024-01-30 19:01:55 | ERROR | stderr | model-00001-of-00007.safetensors:  31%|███       | 566M/1.83G [22:00<53:09, 396kB/s]
+2024-01-30 19:01:55 | ERROR | stderr | [A
+Error while downloading from https://cdn-lfs-us-1.huggingface.co/repos/01/5a/015a4eda6314fbcdb0aecc00e73f604e0f398b10ef843cf3e7bfcf8d0b9c1d7d/b1052386eac358a18add3d0f92521c85ab338979da8eeb08a6499555b857f80d?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27model-00001-of-00007.safetensors%3B+filename%3D%22model-00001-of-00007.safetensors%22%3B&Expires=1706870393&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwNjg3MDM5M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzAxLzVhLzAxNWE0ZWRhNjMxNGZiY2RiMGFlY2MwMGU3M2Y2MDRlMGYzOThiMTBlZjg0M2NmM2U3YmZjZjhkMGI5YzFkN2QvYjEwNTIzODZlYWMzNThhMThhZGQzZDBmOTI1MjFjODVhYjMzODk3OWRhOGVlYjA4YTY0OTk1NTViODU3ZjgwZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=S80QG4nDaULCRCZv5l38u%7EqT-qeLZeOyxh0lKNQeGQ7SEh3HZ1JDNhudxU4l1FK2XSzitnvVrTVkVcA4%7EyU%7EFrDYsu3G6OIeXYrjEKeEzGVi9G0o1Ro0a33r9pWCNac5o4E7e-s0%7Ed1DGMpLfvclI9PKRqv3pt2xRZ9tpo-t5WNV%7ERNbumM8H9%7EDW2UyMXKrASjajUaJqM3MBTlMAFEruNMNdGALL39U%7EzqyRxd8swgfrd14oz6wbxhEBWq3XiBsa6tdp%7EWeIwGrC7uZ6BKps3M40r4FYZf6qH3OvZePX1O38kojA%7EQECT9Hse1UmBQ0TFnADMSmZVa1AvesVS4yGA__&Key-Pair-Id=KCD77M1F0VK2B: HTTPSConnectionPool(host='cdn-lfs-us-1.huggingface.co', port=443): Read timed out.
+Trying to resume download...
+2024-01-30 19:02:08 | WARNING | huggingface_hub.file_download | Error while downloading from https://cdn-lfs-us-1.huggingface.co/repos/01/5a/015a4eda6314fbcdb0aecc00e73f604e0f398b10ef843cf3e7bfcf8d0b9c1d7d/b1052386eac358a18add3d0f92521c85ab338979da8eeb08a6499555b857f80d?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27model-00001-of-00007.safetensors%3B+filename%3D%22model-00001-of-00007.safetensors%22%3B&Expires=1706870393&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwNjg3MDM5M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzAxLzVhLzAxNWE0ZWRhNjMxNGZiY2RiMGFlY2MwMGU3M2Y2MDRlMGYzOThiMTBlZjg0M2NmM2U3YmZjZjhkMGI5YzFkN2QvYjEwNTIzODZlYWMzNThhMThhZGQzZDBmOTI1MjFjODVhYjMzODk3OWRhOGVlYjA4YTY0OTk1NTViODU3ZjgwZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=S80QG4nDaULCRCZv5l38u%7EqT-qeLZeOyxh0lKNQeGQ7SEh3HZ1JDNhudxU4l1FK2XSzitnvVrTVkVcA4%7EyU%7EFrDYsu3G6OIeXYrjEKeEzGVi9G0o1Ro0a33r9pWCNac5o4E7e-s0%7Ed1DGMpLfvclI9PKRqv3pt2xRZ9tpo-t5WNV%7ERNbumM8H9%7EDW2UyMXKrASjajUaJqM3MBTlMAFEruNMNdGALL39U%7EzqyRxd8swgfrd14oz6wbxhEBWq3XiBsa6tdp%7EWeIwGrC7uZ6BKps3M40r4FYZf6qH3OvZePX1O38kojA%7EQECT9Hse1UmBQ0TFnADMSmZVa1AvesVS4yGA__&Key-Pair-Id=KCD77M1F0VK2B: HTTPSConnectionPool(host='cdn-lfs-us-1.huggingface.co', port=443): Read timed out.
+Trying to resume download...
+2024-01-30 19:02:13 | ERROR | stderr | 
+2024-01-30 19:02:13 | ERROR | stderr | model-00001-of-00007.safetensors:  31%|███       | 566M/1.83G [22:17<53:09, 396kB/s]
+2024-01-30 19:02:13 | ERROR | stderr | [A
+2024-01-30 19:02:19 | ERROR | stderr | model-00001-of-00007.safetensors:  31%|███       | 566M/1.83G [22:23<49:53, 421kB/s]
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Downloading shards:   0%|          | 0/7 [22:26<?, ?it/s]
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Process model_worker - chatglm3-6b:
+2024-01-30 19:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 712, in _error_catcher
+2024-01-30 19:02:19 | ERROR | stderr |     yield
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 812, in _raw_read
+2024-01-30 19:02:19 | ERROR | stderr |     data = self._fp_read(amt) if not fp_closed else b""
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 797, in _fp_read
+2024-01-30 19:02:19 | ERROR | stderr |     return self._fp.read(amt) if amt is not None else self._fp.read()
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/http/client.py", line 463, in read
+2024-01-30 19:02:19 | ERROR | stderr |     n = self.readinto(b)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/http/client.py", line 507, in readinto
+2024-01-30 19:02:19 | ERROR | stderr |     n = self.fp.readinto(b)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/socket.py", line 704, in readinto
+2024-01-30 19:02:19 | ERROR | stderr |     return self._sock.recv_into(b)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/ssl.py", line 1275, in recv_into
+2024-01-30 19:02:19 | ERROR | stderr |     return self.read(nbytes, buffer)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/ssl.py", line 1133, in read
+2024-01-30 19:02:19 | ERROR | stderr |     return self._sslobj.read(len, buffer)
+2024-01-30 19:02:19 | ERROR | stderr | socket.timeout: The read operation timed out
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/requests/models.py", line 816, in generate
+2024-01-30 19:02:19 | ERROR | stderr |     yield from self.raw.stream(chunk_size, decode_content=True)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 934, in stream
+2024-01-30 19:02:19 | ERROR | stderr |     data = self.read(amt=amt, decode_content=decode_content)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 877, in read
+2024-01-30 19:02:19 | ERROR | stderr |     data = self._raw_read(amt)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 833, in _raw_read
+2024-01-30 19:02:19 | ERROR | stderr |     raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/contextlib.py", line 137, in __exit__
+2024-01-30 19:02:19 | ERROR | stderr |     self.gen.throw(typ, value, traceback)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/response.py", line 717, in _error_catcher
+2024-01-30 19:02:19 | ERROR | stderr |     raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+2024-01-30 19:02:19 | ERROR | stderr | urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs-us-1.huggingface.co', port=443): Read timed out.
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 524, in http_get
+2024-01-30 19:02:19 | ERROR | stderr |     for chunk in r.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/requests/models.py", line 822, in generate
+2024-01-30 19:02:19 | ERROR | stderr |     raise ConnectionError(e)
+2024-01-30 19:02:19 | ERROR | stderr | requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs-us-1.huggingface.co', port=443): Read timed out.
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connectionpool.py", line 776, in urlopen
+2024-01-30 19:02:19 | ERROR | stderr |     self._prepare_proxy(conn)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1045, in _prepare_proxy
+2024-01-30 19:02:19 | ERROR | stderr |     conn.connect()
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connection.py", line 642, in connect
+2024-01-30 19:02:19 | ERROR | stderr |     sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connection.py", line 782, in _ssl_wrap_socket_and_match_hostname
+2024-01-30 19:02:19 | ERROR | stderr |     ssl_sock = ssl_wrap_socket(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 470, in ssl_wrap_socket
+2024-01-30 19:02:19 | ERROR | stderr |     ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 514, in _ssl_wrap_socket_impl
+2024-01-30 19:02:19 | ERROR | stderr |     return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/ssl.py", line 501, in wrap_socket
+2024-01-30 19:02:19 | ERROR | stderr |     return self.sslsocket_class._create(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/ssl.py", line 1074, in _create
+2024-01-30 19:02:19 | ERROR | stderr |     self.do_handshake()
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/ssl.py", line 1343, in do_handshake
+2024-01-30 19:02:19 | ERROR | stderr |     self._sslobj.do_handshake()
+2024-01-30 19:02:19 | ERROR | stderr | socket.timeout: _ssl.c:1112: The handshake operation timed out
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+2024-01-30 19:02:19 | ERROR | stderr |     resp = conn.urlopen(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+2024-01-30 19:02:19 | ERROR | stderr |     retries = retries.increment(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/util/retry.py", line 470, in increment
+2024-01-30 19:02:19 | ERROR | stderr |     raise reraise(type(error), error, _stacktrace)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/util/util.py", line 39, in reraise
+2024-01-30 19:02:19 | ERROR | stderr |     raise value
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connectionpool.py", line 778, in urlopen
+2024-01-30 19:02:19 | ERROR | stderr |     self._raise_timeout(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+2024-01-30 19:02:19 | ERROR | stderr |     raise ReadTimeoutError(
+2024-01-30 19:02:19 | ERROR | stderr | urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs-us-1.huggingface.co', port=443): Read timed out. (read timeout=10)
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-01-30 19:02:19 | ERROR | stderr | 
+2024-01-30 19:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+2024-01-30 19:02:19 | ERROR | stderr |     self.run()
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/multiprocessing/process.py", line 108, in run
+2024-01-30 19:02:19 | ERROR | stderr |     self._target(*self._args, **self._kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/Langchain-Chatchat/startup.py", line 389, in run_model_worker
+2024-01-30 19:02:19 | ERROR | stderr |     app = create_model_worker_app(log_level=log_level, **kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/Langchain-Chatchat/startup.py", line 217, in create_model_worker_app
+2024-01-30 19:02:19 | ERROR | stderr |     worker = ModelWorker(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/fastchat/serve/model_worker.py", line 77, in __init__
+2024-01-30 19:02:19 | ERROR | stderr |     self.model, self.tokenizer = load_model(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/fastchat/model/model_adapter.py", line 348, in load_model
+2024-01-30 19:02:19 | ERROR | stderr |     model, tokenizer = adapter.load_model(model_path, kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/fastchat/model/model_adapter.py", line 826, in load_model
+2024-01-30 19:02:19 | ERROR | stderr |     model = AutoModel.from_pretrained(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/transformers/models/auto/auto_factory.py", line 561, in from_pretrained
+2024-01-30 19:02:19 | ERROR | stderr |     return model_class.from_pretrained(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/transformers/modeling_utils.py", line 3351, in from_pretrained
+2024-01-30 19:02:19 | ERROR | stderr |     resolved_archive_file, sharded_metadata = get_checkpoint_shard_files(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/transformers/utils/hub.py", line 1017, in get_checkpoint_shard_files
+2024-01-30 19:02:19 | ERROR | stderr |     cached_filename = cached_file(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/transformers/utils/hub.py", line 389, in cached_file
+2024-01-30 19:02:19 | ERROR | stderr |     resolved_file = hf_hub_download(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+2024-01-30 19:02:19 | ERROR | stderr |     return fn(*args, **kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1457, in hf_hub_download
+2024-01-30 19:02:19 | ERROR | stderr |     http_get(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 541, in http_get
+2024-01-30 19:02:19 | ERROR | stderr |     return http_get(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 451, in http_get
+2024-01-30 19:02:19 | ERROR | stderr |     r = _request_wrapper(
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 408, in _request_wrapper
+2024-01-30 19:02:19 | ERROR | stderr |     response = get_session().request(method=method, url=url, **params)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+2024-01-30 19:02:19 | ERROR | stderr |     resp = self.send(prep, **send_kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+2024-01-30 19:02:19 | ERROR | stderr |     r = adapter.send(request, **kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/huggingface_hub/utils/_http.py", line 67, in send
+2024-01-30 19:02:19 | ERROR | stderr |     return super().send(request, *args, **kwargs)
+2024-01-30 19:02:19 | ERROR | stderr |   File "/root/miniconda3/envs/cc-qq/lib/python3.9/site-packages/requests/adapters.py", line 532, in send
+2024-01-30 19:02:19 | ERROR | stderr |     raise ReadTimeout(e, request=request)
+2024-01-30 19:02:19 | ERROR | stderr | requests.exceptions.ReadTimeout: (ReadTimeoutError("HTTPSConnectionPool(host='cdn-lfs-us-1.huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 1e4dae02-b754-44ba-9d29-089bb38ca3c2)')
+2024-01-31 09:02:42,586 - startup.py[line:851] - ERROR: 
+2024-01-31 09:02:42,587 - startup.py[line:852] - WARNING: Caught KeyboardInterrupt! Setting stop event...
+2024-01-31 09:02:42,587 - startup.py[line:859] - WARNING: Sending SIGKILL to {'zhipu-api': <Process name='api_worker - zhipu-api (8333)' pid=8333 parent=8166 started daemon>}
+2024-01-31 09:02:42,587 - startup.py[line:859] - WARNING: Sending SIGKILL to {'chatglm3-6b': <Process name='model_worker - chatglm3-6b (8332)' pid=8332 parent=8166 stopped exitcode=1 daemon>}
+2024-01-31 09:02:42,587 - startup.py[line:859] - WARNING: Sending SIGKILL to <Process name='controller (8290)' pid=8290 parent=8166 started daemon>
+2024-01-31 09:02:42,588 - startup.py[line:859] - WARNING: Sending SIGKILL to <Process name='openai_api (8327)' pid=8327 parent=8166 stopped exitcode=-SIGKILL daemon>
+2024-01-31 09:02:42,588 - startup.py[line:859] - WARNING: Sending SIGKILL to <Process name='API Server' parent=8166 initial daemon>
+Traceback (most recent call last):
+  File "/root/Langchain-Chatchat/startup.py", line 885, in <module>
+    loop.run_until_complete(start_main_server())
+  File "/root/miniconda3/envs/cc-qq/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/root/Langchain-Chatchat/startup.py", line 867, in start_main_server
+    p.kill()
+  File "/root/miniconda3/envs/cc-qq/lib/python3.9/multiprocessing/process.py", line 140, in kill
+    self._popen.kill()
+AttributeError: 'NoneType' object has no attribute 'kill'
